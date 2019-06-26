@@ -13,7 +13,11 @@
         }
         .wrapper{
             width:100%;
-            overflow-x:scroll;
+            overflow:hidden;
+        }
+        .wrapper_position{
+            width:100%;
+            overflow-x:auto;
             -webkit-overflow-scrolling: touch;/*这个属性可以使滚动更流畅有左右弹动*/
             margin-top: -100px;
             padding-bottom: 100px;
@@ -35,11 +39,13 @@
 <body>
     <h1>Bug-0001: 隐藏滚动条</h1>
     <div class="wrapper">
-        <div class="inner">
-            <img src="../images/20889683_155937767000_2.jpg" alt="">
-            <img src="../images/20889683_160001424000_2.jpg" alt="">
-            <img src="../images/20889683_160001476000_2.jpg" alt="">
-            <img src="../images/20889683_160312594000_2.jpg" alt="">
+        <div class="wrapper_position">
+            <div class="inner">
+                <img src="../images/20889683_155937767000_2.jpg" alt="">
+                <img src="../images/20889683_160001424000_2.jpg" alt="">
+                <img src="../images/20889683_160001476000_2.jpg" alt="">
+                <img src="../images/20889683_160312594000_2.jpg" alt="">
+            </div>
         </div>
     </div>
 </body>
