@@ -14,6 +14,11 @@
         .wrapper{
             width:100%;
             overflow-x:scroll;
+            -webkit-overflow-scrolling: touch;/*这个属性可以使滚动更流畅有左右弹动*/
+            margin-top: -100px;
+            padding-bottom: 100px;
+            -webkit-transform: translateY(100px) !important;
+            transform: translateY(100px);
         }
         .wrapper .inner{
             white-space: nowrap;
@@ -23,6 +28,7 @@
             width:180px;
             margin:0 10px;
         }
+        
 
     </style>
 </head>
